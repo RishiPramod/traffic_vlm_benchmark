@@ -1,0 +1,12 @@
+# Global config for the benchmark
+fps: 30  # camera framerate; override via CLI
+pixel_per_meter: 10.0  # crude scale; set from calibration or homography
+counting_line: [0.2, 0.8, 0.8, 0.8]  # normalized x1,y1,x2,y2 in [0,1] (bottom horizontal line)
+models:
+  yolo11l: "yolo11l.pt"  # change to absolute path if needed
+  rtdetr_l: "rtdetr-l.pt"  # placeholder
+  grounding_dino_tiny: "groundingdino-tiny"  # HF id or local path (placeholder)
+  clip: "openai/clip-vit-base-patch32"
+  sam2: "facebook/sam2"  # placeholder
+  internvl2: "OpenGVLab/InternVL2-8B"  # placeholder
+  videollama2: "DAMO-NLP-SG/VideoLLaMA2"  # placeholder
